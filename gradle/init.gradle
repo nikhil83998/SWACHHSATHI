@@ -1,0 +1,17 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+gradle.projectsLoaded {
+    rootProject.allprojects {
+        buildscript {
+            repositories {
+                google()
+                mavenCentral()
+            }
+        }
+    }
+} 
